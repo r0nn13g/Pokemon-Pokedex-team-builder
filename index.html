@@ -1,0 +1,99 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Poké Builder</title>
+        <script defer src="script.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <img src="https://www.pngall.com/wp-content/uploads/2016/06/Pokemon-PNG-Pic.png">
+            <h1>チームビルダー</h1>
+            </div>
+        <form id="pokemon-selector">
+            <div id="error-message"></div>
+            <select id="pokemon-select" name="pokemon-select">
+                <option value="default">--Choose your pokemon--</option>
+            <input type="submit" value="Go"/>
+        </form>
+            <div id="details">
+                <div id="details-title">
+                <h2>Details</h2>
+                </div>
+                <div id="details-img-container">
+                <img src="https://www.freeiconspng.com/uploads/pokeball-transparent-png-2.png" alt="pikachu">
+                </div>
+                <div id="details-text">
+                    <div id="details-name">Name:</div>
+                    <br>
+                    <div id="details-species">Species: </div>
+                    <br>
+                    <div id="details-type">Type: </div>
+                </div>
+                <div id="details-sub-text">
+                    <h3>Attributes</h3>
+                    <div>Hit Points:</div>
+                    <br>
+                    <div>Attack: </div>
+                    <br>
+                    <div>Defense: </div>
+                </div>
+                <div id="details-action">
+                    <button>Add-></button>
+                </div>            
+            </div>
+            <div id="team">
+                <h3>Team</h3>
+                <ul id="team-list">
+                    <li>
+                        <img alt="squirtle" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c32a.png">
+                        <span>squirtle</span>
+                    </li>
+                    <li>
+                        <img alt="squirtle" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c32a.png">
+                        <span>Squirtle</span>
+                    </li>
+                    <li>
+                        <img alt="raichu" src="https://static.wikia.nocookie.net/your-guide-to-pokemon/images/9/90/Female_Raichu.png">
+                        <span>Raichu</span>
+                    </li>
+                    <li>
+                        <img alt="Gengar" src="https://cdn2.bulbagarden.net/upload/thumb/c/c6/094Gengar.png/250px-094Gengar.png">
+                        <span>Gengar</span>
+                    </li>
+                </ul>
+                <br>
+                <h4>Team Statistics</h4>
+                <div>Health Points: 105</div>
+                <div>Attack: 130</div>
+                <div>Defense: 60</div>
+            </div>
+            <div id="versions">
+                <h3>Versions</h3>
+                <div id="versions-list">
+                    <div class="versions-list-item">
+                    <img alt="riachu" src="https://static.wikia.nocookie.net/your-guide-to-pokemon/images/9/90/Female_Raichu.png">
+                    <div>Raichu</div>
+                    </div>
+                    <div class="versions-list-item">
+                    <img alt="riachu" src="https://static.wikia.nocookie.net/your-guide-to-pokemon/images/9/90/Female_Raichu.png">
+                    <div>Raichu</div>    
+                    </div>
+                    <div class="versions-list-item">
+                    <img alt="riachu" src="https://static.wikia.nocookie.net/your-guide-to-pokemon/images/9/90/Female_Raichu.png">
+                    <div>Raichu</div>    
+                </div>
+                </div>
+            </div>
+            <div id="recent">
+                <h3>Recent</h3>
+                <div id="recent-list"></div>
+            </div>
+        </div>
+        <div id="current-pokemon"></div>
+    </body>
+    </html>
